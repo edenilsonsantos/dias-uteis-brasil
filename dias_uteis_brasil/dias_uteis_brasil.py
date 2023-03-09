@@ -1,9 +1,10 @@
 # Para calcular dias úteis Brasil, excluindo feriados nacionais e finais de semana.
-# By Edenilson
 
 from datetime import date, datetime
 
 class Dia_util:
+    def __init__(self):
+        pass
 
     ano_atual = int(datetime.now().strftime('%Y'))
     dd = int(datetime.now().strftime('%d'))
@@ -166,6 +167,16 @@ class Dia_util:
             self.mes = 3
 
 
+class imprima():
+    
+    def __init__(self):
+        pass
+    
+    def data_de_hoje(self):
+        hj = datetime.now().strftime('%d/%m/%Y')
+        print('hoje', hj)
+        return hj
+    
 
 ########### como chamar e utilizar a classe ###################
 # Dia_util = Dia_util()
